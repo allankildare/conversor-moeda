@@ -24,6 +24,8 @@ export default class Conversor extends Component {
             .then(json => {
                 let cotacao = json[de].low
                 let moedaB_valor = (parseFloat(this.state.moedaA_valor) * cotacao).toFixed(2)
+                moedaB_valor = parseFloat(moedaB_valor)
+                moedaB_valor = moedaB_valor.toLocaleString('pt-BR')
                 this.setState({moedaB_valor})
         })
     }
@@ -34,7 +36,7 @@ export default class Conversor extends Component {
                 <h2>{this.props.moedaA} para {this.props.moedaB}</h2>
                 <input type="text" onChange={(event) => {this.setState({moedaA_valor:event.target.value})}} />
                 <input type="button" value="converter" onClick={this.converter} />
-                <h2>{this.state.moedaB_valor}</h2>
+                <h2>R$ {this.state.moedaB_valor}</h2>
             </div>
         )
     }
