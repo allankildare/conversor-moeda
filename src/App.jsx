@@ -2,6 +2,7 @@ import React from 'react'
 import './App.css'
 
 import Conversor from './components/Conversor'
+import ConversorJSX from './components/ConversorJSX'
 
 function App() {
   return (
