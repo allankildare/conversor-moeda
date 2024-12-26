@@ -1,0 +1,21 @@
+.footer {
+  background-color: var(--footer-bg-color);
+  color: var(--light-text);
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0;
+  align-items: center;
+}
+
+.footer a, .footer a:visited {
+  color: var(--light-text);
+}
+
+.footer p {
+  line-height: 1.4;
+}
+
+.heart {
+  display: inline-block;
+  vertical-align: middle;
+}

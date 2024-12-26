@@ -1,0 +1,21 @@
+.currencyField {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  color: black;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+.countryFlag {
+  width: 24px;
+  margin-right: 8px;
+}
+
+.currencySelect {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 16px;
+  color: inherit;
+}

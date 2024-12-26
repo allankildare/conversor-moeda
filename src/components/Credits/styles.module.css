@@ -1,0 +1,4 @@
+.credits {
+  font-size: clamp(1rem, 0.208vw + 0.958rem, 1.125rem);
+  line-height: 1.3;
+}
