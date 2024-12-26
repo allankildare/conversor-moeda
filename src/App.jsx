@@ -1,20 +1,22 @@
 import React from 'react'
 import './App.css'
 
-import Conversor from './components/Conversor'
-import ConversorJSX from './components/ConversorJSX'
+import CurrencyConverter from './components/CurrencyConverter'
+import Credits from './components/Credits'
+import Footer from './components/Footer'
 
 function App() {
   return (
-    <div className="App">
-      <h1>Conversor de moedas</h1>
-        <div className="conversor-style">
-          <Conversor moedaA="USD" moedaB="BRL" />
-          <Conversor moedaA="CAD" moedaB="BRL" />
-          <Conversor moedaA="EUR" moedaB="BRL" />
-          <Conversor moedaA="GBP" moedaB="BRL" />
-        </div>
-    </div>
+      <div className="app-container">
+        <main>
+          <h1 style={{ textAlign: 'center' }}>Currency converter</h1>
+          <section>
+            <CurrencyConverter />
+          </section>
+          <Credits />
+        </main>
+        <Footer />
+      </div>
   )
 }
 
